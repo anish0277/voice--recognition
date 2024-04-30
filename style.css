@@ -1,0 +1,145 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 2.5vmin;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #000;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+h2 {
+   width: 90%;
+   text-align: center;
+   font-size: 1.6rem;
+   margin: 1rem auto;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('https://static.vecteezy.com/system/resources/previews/002/752/784/original/abstract-digital-background-with-technology-circuit-board-texture-electronic-motherboard-illustration-communication-and-engineering-concept-illustration-free-vector.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#imageAndMic {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#ironImage {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ironImage img {
+    width: 35%;
+    animation: animated 50s ease infinite;
+}
+
+@keyframes animated {
+    0% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#firstDiv {
+    width: 90%;
+    min-height: 17vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#secondDiv {
+    width: 90%;
+    min-height: 33%;
+    color: grey;
+    background: #000;
+    position: relative; 
+    bottom: -9%;
+    padding: 0.5rem;
+    line-height: 1.5;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+button {
+    width: 4.5rem;
+    min-height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background: green;
+    color: #fff;
+    font-weight: 400;
+    margin: 0.4rem auto;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+button:hover {
+  transform: translateY(2px);
+  background: purple;
+  width: 4.7rem;
+}
+
+button img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+p {
+  width: 100%;
+  margin: 0.05rem;
+}
+
+@media screen and (max-width: 720px) {
+  #ironImage {
+      width: 120%;
+  }
+}
+
+
+@media screen and (min-width: 720px) {
+  #imageAndMic {
+    flex-direction: row;
+    margin: 2rem auto;
+  }
+}
